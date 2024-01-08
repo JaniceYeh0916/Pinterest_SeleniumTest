@@ -1,7 +1,7 @@
 @ignore
 Feature: Save, download, share the picture
 
-  Scenario: Save、download、share picture
+  Scenario: Save picture
     Given user navigate to the login page
     When User enters valid email address "D1018661@o365.fcu.edu.tw" into the email field
     And User enters valid password "D1018661" into the password field
@@ -12,8 +12,8 @@ Feature: Save, download, share the picture
 
   Scenario: Download picture
     Given user navigate to the login page
-    When User enters valid email address "D1051415@o365.fcu.edu.tw" into the email field
-    And User enters valid password "20030408helloworld" into the password field
+    When User enters valid email address "D1050957@o365.fcu.edu.tw" into the email field
+    And User enters valid password "d1050957" into the password field
     And User clicks on the login button
     And user click the first picture
     And user click the function list
