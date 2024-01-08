@@ -232,7 +232,7 @@ public class allFunction {
     @And("user click the function list")
     public void userClickTheFunctionList() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
-        WebElement element = driver.findElement(By.xpath("(//div[@class='KS5 hs0 ujU un8 C9i TB_'])[2]"));
+        WebElement element = driver.findElement(By.xpath("//div[@aria-label='更多選項']"));
         element.click();
     }
 
@@ -240,7 +240,7 @@ public class allFunction {
     @And("user click the button of saving picture")
     public void userClickSavePicture() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
-        WebElement element = driver.findElement(By.xpath("(//div[@class='DUt CCY Tbt L4E e8F BG7'])[1]"));
+        WebElement element = driver.findElement(By.xpath("//span[@title='下載圖片']"));
         element.click();
     }
 
@@ -249,7 +249,8 @@ public class allFunction {
     @And("user click the button of sharing picture")
     public void userClickSharePicture() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
-        WebElement element = driver.findElement(By.xpath("(//div[@class='KS5 hs0 un8 C9i TB_'])[1]"));
+        //WebElement element = driver.findElement(By.xpath("(//div[@class='KS5 hs0 un8 C9i TB_'])[2]"));
+        WebElement element = driver.findElement(By.xpath("//button[@aria-label='Send']"));
         element.click();
     }
 
@@ -257,7 +258,8 @@ public class allFunction {
     @And("user click the button of copying path")
     public void userClickCopyPath() throws InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
-        WebElement element = driver.findElement(By.xpath("(//div[@class='VxL oy8 zI7 iyn Hsu'])[1]"));
+//        WebElement element = driver.findElement(By.xpath("(//div[@class='VxL oy8 zI7 iyn Hsu'])[2]"));
+        WebElement element = driver.findElement(By.xpath("//button[@aria-label='Copy Link']"));
         element.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
     }
